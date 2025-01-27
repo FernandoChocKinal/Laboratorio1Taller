@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #ffebeb;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    background-image: url('https://amateurphotographer.com/wp-content/uploads/sites/7/2022/06/001.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* Encabezado */
+header {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+header:hover h1 {
+    transform: scale(1.1);
+}
+
+/* Barra de navegación */
+nav {
+    background-color: #b71c1c;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #ff4081;
+    transform: scale(1.1);
+}
+
+/* Sección de intereses */
+#intereses {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#intereses h2 {
+    color: #b71c1c;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#intereses ul {
+    list-style: none;
+    padding: 0;
+}
+
+#intereses ul li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+#intereses ul li:hover {
+    background-color: #ffebee;
+}
+
+#intereses ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #d32f2f;
+    font-size: 1.5em;
+    top: 0;
+}
+
+/* Estilo para las imágenes */
+.imagen-interes {
+    margin-top: 20px;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen-interes:hover {
+    transform: scale(1.05);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+/* Animación de aparición para el encabezado */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
